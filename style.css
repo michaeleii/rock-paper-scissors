@@ -1,4 +1,8 @@
 body {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    justify-content: space-around;
     background-color: #20232a;
     font-family: 'Raleway', sans-serif;
 }
@@ -7,7 +11,6 @@ header {
     padding-top: 20px;
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
 }
 .score-area {
     display: flex;
@@ -57,7 +60,6 @@ header {
     align-items: center;
     flex-wrap: wrap;
     gap: 50px;
-    height: 500px;
 }
 
 .game-button {
@@ -95,4 +97,13 @@ header {
 .scissors {
     border: 5px solid yellow;
 }
-
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+.rules {
+    font-size: 50px;
+    color: white;
+}
