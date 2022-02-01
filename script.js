@@ -64,39 +64,37 @@ function captalizeFirstLetter(str) {
 function game() {
     let playerScore = 0;
     let computerScore = 0;
-    for (let index = 1; index <= 5; index++) {
-        let computerInput = computerPlay();
-        let playerInput = captalizeFirstLetter(prompt("Rock, Paper or Scissors?"));
-        let result = gameRound(playerInput, computerInput);
-        let playerWin = result.substring(0, 8) == 'You win!';
-        let playerLose = result.substring(0, 9) == 'You lose!';
-        let playerTie = result.substring(0, 4) == 'Tie.';
+    let computerInput = computerPlay();
+   // let playerInput = captalizeFirstLetter(prompt("Rock, Paper or Scissors?"));
+    let result = gameRound(playerInput, computerInput);
+    let playerWin = result.substring(0, 8) == 'You win!';
+    let playerLose = result.substring(0, 9) == 'You lose!';
+    let playerTie = result.substring(0, 4) == 'Tie.';
 
-        if (playerWin) {
+    if (playerWin) {
 
-            ++playerScore;
+        ++playerScore;
 
-        } else if (playerLose) {
+    } else if (playerLose) {
 
-            ++computerScore;
+        ++computerScore;
 
-        } else if (playerTie) {
+    } else if (playerTie) {
 
-            ++playerScore;
-            ++computerScore;
-        }
-        console.log(`ROUND: ${index}`)
-        console.log(result)
-        console.log(`${playerScore} : ${computerScore}`);
-
+        ++playerScore;
+        ++computerScore;
     }
+    console.log(`ROUND: ${index}`)
+    console.log(result)
+    console.log(`${playerScore} : ${computerScore}`);
+
 
     if (playerScore > computerScore) {
         console.log("You are the winner! :)")
     } else if (playerScore < computerScore) {
-        console.log("You are the loser! :(")
+        console.log("You are the loser! :(");
     } else if (playerScore == computerScore) {
-        console.log("Tied game.")
+        console.log("Tied game.");
     }
 }
 

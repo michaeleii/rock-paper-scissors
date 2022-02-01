@@ -1,0 +1,40 @@
+header {
+    display: flex;
+    justify-content: center;
+}
+.score-area {
+    display: flex;
+    border: solid grey 5px;
+    width: 500px;
+    height: 200px;
+    justify-content: space-around;
+}
+.left-section {
+    font-size: 50px;
+}
+.right-section {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.scorecard {
+    padding: 20px;
+    border: solid grey 5px;
+}
+.score {
+    text-align: center;
+    font-size: 50px;
+}
+#button-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 500px;
+}
+
+.game-button {
+    padding: 20px;
+    border: none;
+    border-radius: 50%;
+}
