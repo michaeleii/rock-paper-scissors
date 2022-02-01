@@ -1,46 +1,92 @@
+body {
+    background-color: #20232a;
+    font-family: 'Raleway', sans-serif;
+}
+
 header {
+    padding-top: 20px;
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 }
 .score-area {
     display: flex;
-    border: solid grey 5px;
-    width: 500px;
+    border-radius: 10px;
+    width: 600px;
     height: 200px;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .left-section {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     font-size: 50px;
+    font-weight: 800;
+    color: white;
+    width: 204px;
+    padding: 5px
 }
 .right-section {
     display: flex;
-    gap: 20px;
     align-items: center;
 }
 .scorecard {
-    padding: 20px;
-    border: solid grey 5px;
+    background-color: none;
+    width: 90px;
+    border-radius: 10px;
+    color: white;
+}
+.middle {
+    margin: 0px 10px;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+}
+.title {
+    text-align: center;
 }
 .score {
+    color: white;
     text-align: center;
-    font-size: 50px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 100px;
 }
 #button-area {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: 50px;
     height: 500px;
 }
 
 .game-button {
-    padding: 30px;
-    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
+    background-color: #20232a;
 }
 
 .far {
     font-size: 100px;
+    color: #fff;
+}
+.game-button:hover {
+    color: black;
 }
 
+
+.rock {
+    border: 5px solid indianred;
+}
+
+.paper {
+    border: 5px solid lightskyblue;
+}
+.scissors {
+    border: 5px solid yellow;
+}
 
