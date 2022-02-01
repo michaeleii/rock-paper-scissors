@@ -34,7 +34,13 @@ header {
 }
 
 .game-button {
-    padding: 20px;
+    padding: 30px;
     border: none;
     border-radius: 50%;
 }
+
+.far {
+    font-size: 100px;
+}
+
+
