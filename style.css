@@ -14,7 +14,7 @@ header {
     border-radius: 10px;
     width: 600px;
     height: 200px;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .left-section {
     display: flex;
@@ -67,11 +67,17 @@ header {
     width: 250px;
     height: 250px;
     border-radius: 50%;
+    font-size: 120px;
     background-color: #20232a;
+}
+.game-button:hover{
+    font-size: 150px;
+    color:darkgray;
+    border-width: 10px;
+
 }
 
 .far {
-    font-size: 120px;
     color: #fff;
 }
 .game-button:hover {
