@@ -1,14 +1,11 @@
 body {
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
-    justify-content: space-around;
     background-color: #20232a;
     font-family: 'Raleway', sans-serif;
 }
 
 header {
-    padding-top: 20px;
+    flex-grow: 1;
+    padding-top: 5px;
     display: flex;
     justify-content: center;
 }
@@ -32,12 +29,20 @@ header {
 .right-section {
     display: flex;
     align-items: center;
+    padding-top: 20px;
+    gap: 50px;
 }
 .scorecard {
     background-color: none;
-    width: 90px;
+    padding: 20px;
     border-radius: 10px;
     color: white;
+}
+.first {
+    border: solid lightskyblue;
+}
+.second {
+    border: solid indianred;
 }
 .middle {
     margin: 0px 10px;
@@ -47,6 +52,7 @@ header {
 }
 .title {
     text-align: center;
+    font-family: 'Raleway', sans-serif;
 }
 .score {
     color: white;
@@ -55,6 +61,7 @@ header {
     font-size: 100px;
 }
 #button-area {
+    margin: 50px 0 50px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,39 +78,37 @@ header {
     border-radius: 50%;
     font-size: 120px;
     background-color: #20232a;
+    border: none;
 }
 .game-button:hover{
     font-size: 150px;
     color:darkgray;
-    border-width: 10px;
 
 }
 
 .far {
     color: #fff;
 }
-.game-button:hover {
-    color: black;
+
+.play-pressed {
+    border: solid lightskyblue;
 }
 
-
-.rock {
-    border: 5px solid indianred;
+.cpu-pressed {
+    border: solid indianred;
+}
+.tie {
+   border: solid lightslategrey; 
 }
 
-.paper {
-    border: 5px solid lightskyblue;
-}
-.scissors {
-    border: 5px solid yellow;
-}
 footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-grow: 1;
+    padding: 20px;
 }
-.rules {
+
+.game-text {
     font-size: 50px;
     color: white;
 }
