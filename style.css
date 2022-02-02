@@ -4,22 +4,19 @@ body {
 }
 
 header {
-    flex-grow: 1;
     padding-top: 5px;
+    padding-bottom: 100px;
     display: flex;
     justify-content: center;
+
 }
 .score-area {
     display: flex;
     border-radius: 10px;
     width: 600px;
-    height: 200px;
     justify-content: space-around;
 }
 .left-section {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
     font-size: 50px;
     font-weight: 800;
     color: white;
@@ -29,7 +26,6 @@ header {
 .right-section {
     display: flex;
     align-items: center;
-    padding-top: 20px;
     gap: 50px;
 }
 .scorecard {
@@ -46,7 +42,6 @@ header {
 }
 .middle {
     margin: 0px 10px;
-    padding-top: 20px;
     display: flex;
     align-items: center;
 }
@@ -61,7 +56,6 @@ header {
     font-size: 100px;
 }
 #button-area {
-    margin: 50px 0 50px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,7 +74,8 @@ header {
     background-color: #20232a;
     border: none;
 }
-.game-button:hover{
+
+.game-button:hover {
     font-size: 150px;
     color:darkgray;
 
@@ -105,10 +100,27 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding-top: 100px;
 }
 
 .game-text {
     font-size: 50px;
     color: white;
+}
+@media only screen and (max-width: 820px)  {
+    .left-section {
+        font-size: 30px;
+    }
+    .game-button {
+        width: 200px;
+        height: 200px;
+        font-size: 100px;
+    }
+    .game-button:hover {
+        font-size: 120px;
+    }
+    .game-text {
+    font-size: 30px;
+    color: white;
+    }
 }

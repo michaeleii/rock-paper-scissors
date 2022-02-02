@@ -1,7 +1,6 @@
 function computerPlay() {
     let computerNum = Math.floor(Math.random() * 3);
 
-
     switch (computerNum) {
 
         case 0:
@@ -53,33 +52,6 @@ function playRound(playerSelection, computerSelection) {
 
 }
 
-
-// function game() {
-// let playerScore = 0;
-// let computerScore = 0;
-//     let computerInput = computerPlay();
-//    let playerInput = captalizeFirstLetter(prompt("rock, paper or scissors?"));
-//     let result = playRound(playerInput, computerInput);
-//     let playerWin = result.substring(0, 8) == 'You win!';
-//     let playerLose = result.substring(0, 9) == 'You lose!';
-//     let playerTie = result.substring(0, 4) == 'Tie.';
-
-//     if (playerWin) {
-
-//         ++playerScore;
-
-//     } else if (playerLose) {
-
-//         ++computerScore;
-
-//     } else if (playerTie) {
-
-//         ++playerScore;
-//         ++computerScore;
-//     }
-//     console.log(`ROUND: ${index}`)
-//     console.log(result)
-//     console.log(`${playerScore} : ${computerScore}`);
 
 function checkScore (playerScore, computerScore) {
     if (playerScore == 5) {
@@ -141,8 +113,6 @@ for (let i = 0; i < gameButtons.length; i++) {
 
         }
 
-        console.log(playerScore);
-        console.log(computerScore);
         document.querySelector('.game-text').innerHTML = result;
         document.querySelector('.player.score').innerHTML = playerScore;
         document.querySelector('.computer.score').innerHTML = computerScore;
@@ -151,7 +121,7 @@ for (let i = 0; i < gameButtons.length; i++) {
             playerScore = 0;
             computerScore = 0;
         }
-    });
+    })
     
 }
 
