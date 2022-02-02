@@ -108,6 +108,9 @@ footer {
     color: white;
 }
 @media only screen and (max-width: 700px)  {
+    header {
+        padding-bottom: 50px;
+    }
     .score-area {
         display: flex;
         flex-direction: column;
@@ -120,6 +123,13 @@ footer {
         justify-content: center;
         margin-bottom: 20px;    
     }
+    .title {
+        text-align: center;
+        font-family: 'Raleway', sans-serif;
+    }
+    .score {
+        font-size: 80px;
+    }
     .game-button {
         width: 100px;
         height: 100px;
@@ -128,8 +138,11 @@ footer {
     .game-button:hover {
         font-size: 70px;
     }
+    .footer {
+        padding-top: 50px;
+    }
     .game-text {
-    font-size: 25px;
-    color: white;
+        font-size: 25px;
+        color: white;
     }
 }
